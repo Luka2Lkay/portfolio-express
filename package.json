@@ -1,0 +1,18 @@
+{
+  "name": "portfolio-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}
