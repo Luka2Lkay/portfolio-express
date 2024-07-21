@@ -4,4 +4,4 @@ const {emailMessage} = require("../controllers/messageController")
 
 router.post("/send-message", emailMessage)
 
-module.exports = {router}
+module.exports = router;
