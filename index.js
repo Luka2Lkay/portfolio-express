@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const messageRoute = require("./src/routes/messageRoute");
-const { emailMessage } = require("./src/controllers/messageController");
 require("dotenv").config();
 
 const port = 3300;
