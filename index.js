@@ -6,18 +6,19 @@ require("dotenv").config();
 
 const port = 3300;
 
-app.use(express.json());
 app.use(cors());
 
-const allowedOrigin = 'http://localhost:4200'; // Replace with your frontend origin
+const allowedOrigin = "http://localhost:4200"; // Replace with your frontend origin
 
 app.use((req, res, next) => {
   if (req.origin === allowedOrigin) {
-    res.setHeader('Access-Control-Allow-Origin', allowedOrigin);
+    res.setHeader("Access-Control-Allow-Origin", allowedOrigin);
   }
-  
+
   next();
 });
+
+app.use(express.json());
 
 // app.use((_req, res, next) => {
 //   res.setHeader("Access-Control-Allow-Origin", "*");
