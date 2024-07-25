@@ -1,4 +1,4 @@
-const { handleSendEmail } = require("../helperFunctions");
+const { handleSendEmail } = require("../helpers/helperFunctions");
 
 const sendEmail = async (req, res) => {
   const { senderName, email, subject, message } = req.body;

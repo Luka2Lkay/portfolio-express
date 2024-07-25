@@ -1,5 +1,5 @@
 require("dotenv").config();
-const { transporter } = require("../src/config");
+const { transporter } = require("../config");
 
 const handleSendEmail = async (name, email, subject, message) => {
   try {
