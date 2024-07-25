@@ -8,7 +8,7 @@ const port = 3300;
 
 app.use(cors());
 
-const allowedOrigin = "http://localhost:4200"; // Replace with your frontend origin
+const allowedOrigin = "http://localhost:4200";
 
 app.use((req, res, next) => {
   if (req.origin === allowedOrigin) {
