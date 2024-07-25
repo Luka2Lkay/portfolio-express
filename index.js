@@ -8,7 +8,7 @@ const port = 3300;
 app.use(express.json());
 app.use(cors());
 
-const allowedOrigin = "https://portfolio-angular-taupe.vercel.app/portfolio";
+const allowedOrigin = "https://portfolio-angular-h71ck39u8-lukas-projects-ad195f49.vercel.app/portfolio";
 
 app.use((req, res, next) => {
   if (req.origin === allowedOrigin) {
